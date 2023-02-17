@@ -1,0 +1,17 @@
+nav{
+    height: 5rem;
+    padding: 0 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+
+    color: #ffffff;
+}
+
+nav > .logo{
+    display: flex;
+    gap: 1rem;
+}

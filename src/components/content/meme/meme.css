@@ -1,0 +1,42 @@
+.meme{
+    
+
+    
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.meme > img{
+    width: 42rem;
+    object-fit: cover;
+    
+}
+
+.meme > .meme-text > h1{
+    z-index: 1;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+
+    color: #FFFFFF;
+
+    -webkit-text-stroke: 1px black;
+}
+
+.meme-text{
+    padding-top: 1rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 32rem;
+}
