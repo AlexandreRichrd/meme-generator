@@ -4,9 +4,17 @@ import './meme.css'
 
 export default function Meme(props) {
 
+    let gap;
+
+    if (props.meme.box_count === 2){
+        gap = 75
+    } else if (props.meme.box_count > 2){
+        gap = 100/props.meme.box_count
+    } 
+
     const buildText = (nbTexts) => {
         let tabText = []
-        console.log(nbTexts)
+        console.log(props.meme.id)
         /* for (let i = 0; i < Object.keys(nbTexts).length; i++){
             tabText.push(<h1>{props.memeText['input' + i]}</h1>)
         } */
@@ -23,7 +31,7 @@ export default function Meme(props) {
     return(
         
         <div className='meme'>
-            <div className="meme-text">
+            <div className="meme-text" style={{'height': ((props.meme.height * 649)/props.meme.width) + 'px', 'gap': gap + '%'}}>
                 {buildText(props.memeText)}
             </div>
             <img src={props.meme.url} alt="" />
